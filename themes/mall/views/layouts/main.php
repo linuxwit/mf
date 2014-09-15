@@ -26,50 +26,56 @@
         </script>
     </head>
     <body>
-   <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Project name</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+        <div class="navbar navbar-inverse navbar-fixed-top ">
+            <div class="navbar-inner">
+                <div class="container header-wrap">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="row">
+
+                        <div class="span3">
+                            <a class="brand" href="#"><h4>WHS</h4></a>
+                        </div>
+                        <div class="nav-collapse collapse span9">
+                            <ul class="nav  pull-center span6">
+                                <li><a href="#">首页</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                            <ul class="nav pull-right span3">
+                                <li><a href="#">注册</a></li>
+                                <li><a href="#about">登录</a></li>
+                                <li><a href="#contact">购物车</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-   
-    <div class="container">
-        <?php echo $content ?>
-    </div>
-    <div id="push"></div>
-    <footer class="footer">
+
         <div class="container">
-            <p class="muted credit">Copyright <a href="http://www.witleaf.com">小叶裁缝</a>.</p>
+            <?php //echo $content ?>
         </div>
-    </footer>
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/jquery.js"></script>
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/bootstrap.js"></script>
-    <!--[if lte IE 6]>
-    <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/bootstrap-ie.js"></script>
-    <!--[endif]-->
-    <script type="text/javascript">
-        $(document).ready(function() {
+        <div id="push"></div>
+        <footer class="footer">
+            <div class="container">
+                <p class="muted credit">Copyright mf23.cn</p>
+            </div>
+        </footer>
+        <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/jquery.js"></script>
+        <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/bootstrap.js"></script>
+        <!--[if lte IE 6]>
+        <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/bootstrap-ie.js"></script>
+        <!--[endif]-->
+        <script type="text/javascript">
+            $(document).ready(function() {
                 $('.carousel').carousel({
-                interval: 2000
+                    interval: 2000
+                });
             });
-        });
-        (function() {
-            var ga = document.createElement('script');ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:'   == document.location.protocol ? 'https://ssl'   : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-</body>
+        </script>
+    </body>
 </html>
