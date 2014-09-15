@@ -26,38 +26,47 @@
         </script>
     </head>
     <body>
-        <div class="navbar navbar-inverse navbar-fixed-top ">
-            <div class="navbar-inner">
-                <div class="container header-wrap">
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+        <div>
+            <div class="header" id="top-header">
+                <div class="container navbar" >
+                    <ul class="nav nav-pills pull-right">
+                        <li><a href="">注册</a></li>
+                        <li><a href="">登录</a></li>
+                        <li><a href="">我的订单</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-logo">
+                <div class="container">
                     <div class="row">
-
-                        <div class="span3">
-                            <a class="brand" href="#"><h4>WHS</h4></a>
+                        <div class="pull-left logo">
+                            <a>
+                                <h2>
+                                    <?php echo Yii::app()->name ?>
+                                </h2>
+                            </a>
                         </div>
-                        <div class="nav-collapse collapse span9">
-                            <ul class="nav  pull-center span6">
-                                <li><a href="#">首页</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                            <ul class="nav pull-right span3">
-                                <li><a href="#">注册</a></li>
-                                <li><a href="#about">登录</a></li>
-                                <li><a href="#contact">购物车</a></li>
-                            </ul>
-                        </div><!--/.nav-collapse -->
+                        <div class="pull-right">
+                            <a href="" class="btn pull-right cart">我的购物车</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar nav-pills" id="header-nav">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <ul class="nav">
+                            <li class="active"><a href="#">首页</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="container">
-            <?php //echo $content ?>
+            <?php echo $content ?>
         </div>
         <div id="push"></div>
         <footer class="footer">
