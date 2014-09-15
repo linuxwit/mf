@@ -7,7 +7,6 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
-        'ext.YiiMongoDbSuite.*',
     ),
     'modules' => array(
     ),
@@ -15,23 +14,14 @@ return array(
         'user' => array(
             'allowAutoLogin' => true,
         ),
-        'mongodb' => array(
-            'class' => 'EMongoDB',
-            'connectionString' => 'mongodb://127.0.0.1:27017',
-            'dbName' => 'witcms',
-            'fsyncFlag' => true,
-            'safeFlag' => true,
-            'useCursor' => false
-        ),
 //        'db' => array(
 //            'connectionString' => 'mysql:host=localhost;dbname=xiaoye',
 //            'emulatePrepare' => true,
 //            'username' => 'root',
-//            'password' => '',
+//            'password' => 'zaq12wsx',
 //            'charset' => 'utf8',
 //        ),
         'errorHandler' => array(
-            // use 'site/error' action to display errors
             'errorAction' => 'site/error',
         ),
         'log' => array(

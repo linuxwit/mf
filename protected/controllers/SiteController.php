@@ -18,16 +18,6 @@ class SiteController extends Controller {
     }
 
     public function actionIndex() {
-
-        $user = new User();
-        $user->name = "jack";
-        $user->pass = "pwd";
-        $user->login="login";
-        $r = $user->save();
-        var_dump($r);
-        $users = User::model()->findAll();
-        var_dump($users);
-        exit();
         $this->render('index');
     }
 

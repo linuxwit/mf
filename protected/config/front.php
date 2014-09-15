@@ -2,8 +2,8 @@
 
 return CMap::mergeArray(
                 require(dirname(__FILE__) . '/main.php'), array(
-            'name' => '小叶裁缝',
-            'theme' => 'bootstrap',
+            'name' => '免费商城',
+            'theme' => 'mall',
             'defaultController' => 'site',
             'homeUrl' => array('site/index'),
             'components' => array(
