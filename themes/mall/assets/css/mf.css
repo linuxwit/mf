@@ -1,15 +1,59 @@
-body
-{
-    /*background: url(../img/dark_fish_skin.png) repeat 0 0;*/
-    font-family: "微软雅黑","宋体","黑体",Arial,"Helvetica Neue", Helvetica , sans-serif;
+body {
+    font-family: "Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft Yahei","微软雅黑",Tahoma,Arial,STHeiti,sans-serif;
+    background: none repeat scroll 0 0 #fff;
+    color: #5e5e5e;
+    height: 100%;
 }
+
+.header-wrap {
+    border-bottom: 1px solid #222526;//
+    height: 80px;
+    padding: 0px 30px;
+    padding: 0;
+}
+
+.header-wrap .nav-collapse a, .header-wrap .nav-collapse a:visited {
+    border-bottom: 1px solid #222526;
+    color: #656e73;
+    display: block;
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.pull-center{
+    margin-left: 100px;
+}
+
+.header-wrap .nav-collapse a:hover, .header-wrap .nav-collapse a:active {
+    border-color: #be3948;
+    color: #fff;
+}
+
 .footer {
     background-color: #F5F5F5;
     border-top: 1px solid #E5E5E5;
-    margin-top: 70px;
+    margin-top: 80px;
     padding: 30px 0;
     text-align: center;
 }
 p.article{
     text-indent: 2em;
+}
+
+@media (max-width: 767px) {
+    .header-wrap {
+        height: auto; 
+        padding: auto;
+        border-bottom: none;
+    }
+    .header-wrap .nav-collapse a, .header-wrap .nav-collapse a:visited {
+        height: 14px;
+        line-height:14px;
+    }
+
+
+
 }
