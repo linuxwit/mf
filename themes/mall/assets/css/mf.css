@@ -1,8 +1,9 @@
 body {
     font-family: "Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft Yahei","微软雅黑",Tahoma,Arial,STHeiti,sans-serif;
-    background: none repeat scroll 0 0 #fff;
+    /*background: none repeat scroll 0 0 #fff;*/
     color: #5e5e5e;
     height: 100%;
+    background: none repeat scroll 0 0 #f2f2f2;
 }
 
 .header {
@@ -41,9 +42,6 @@ body {
     padding: 0;
 }
 
-.cart{
-    margin-top: 20px;
-}
 
 #header-nav .container{
     width: 1170px;
@@ -56,19 +54,58 @@ body {
 
 .logo{
     margin-left: 28px;
+    color:  #ff4a00;
 }
-
+.logo a{
+    text-decoration: none;
+}
+.logo h2{
+    color:  #ff4a00;
+}
+.btn-cart{
+    margin-top: 20px;
+    background: none repeat scroll 0 0 #ffdb3d;
+    border: 1px solid #ffdb3d;
+    color: #333;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px;
+}
 #header-nav .navbar-inner {
-    background-color: #fafafa;
-    background-image: none;
-    background-repeat: repeat-x;
+    background: none repeat scroll 0 0 #404144;
     border: none;
     border-radius: 0px;
     box-shadow: none;
-    min-height: 40px;
+    min-height: 50px;
     padding-left: 20px;
     padding-right: 20px;
 }
+#header-nav .nav{
+    padding: 5px;
+    margin-bottom: 0px;
+}
+#header-nav .nav > li{
+
+    border-right: 1px solid #333;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+
+#header-nav .nav > li > a{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFF;
+
+}
+
+
+
+
 
 .header-wrap .nav-collapse a, .header-wrap .nav-collapse a:visited {
     border-bottom: 1px solid #222526;
@@ -97,17 +134,23 @@ p.article{
     text-indent: 2em;
 }
 
-@media (max-width: 767px) {
-    .header-wrap {
-        height: auto; 
-        padding: auto;
-        border-bottom: none;
-    }
-    .header-wrap .nav-collapse a, .header-wrap .nav-collapse a:visited {
-        height: 14px;
-        line-height:14px;
-    }
+/** register **/
 
+#box-register{
+    border: 1px solid #E5E5E5;
+       background-color: #FFF;
+}
 
+#box-register h2{
+    border-bottom: 1px solid #CCC;
+    padding: 5px 10px;
+ 
+}
+.form-register{
+    padding: 5px 10px;
+    margin-top: 40px;
+}
 
+.form-register .control-group{
+    margin-bottom: 30px;
 }

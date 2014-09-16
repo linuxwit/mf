@@ -2,6 +2,8 @@
 
 class SiteController extends Controller {
 
+    public $layout = '//layouts/home';
+
     public function actions() {
         return array(
             // captcha action renders the CAPTCHA image displayed on the contact page

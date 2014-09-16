@@ -26,49 +26,19 @@
         </script>
     </head>
     <body>
-        <div>
-            <div class="header" id="top-header">
-                <div class="container navbar" >
-                    <ul class="nav nav-pills pull-right">
-                        <li><a href="">注册</a></li>
-                        <li><a href="">登录</a></li>
-                        <li><a href="">我的订单</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header-logo">
-                <div class="container">
-                    <div class="row">
-                        <div class="pull-left logo">
-                            <a>
-                                <h2>
-                                    <?php echo Yii::app()->name ?>
-                                </h2>
-                            </a>
-                        </div>
-                        <div class="pull-right">
-                            <a href="" class="btn pull-right cart">我的购物车</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="navbar nav-pills" id="header-nav">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <ul class="nav">
-                            <li class="active"><a href="#">首页</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="header" id="top-header">
+            <div class="container navbar" >
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="<?php echo $this->createUrl('/account/register') ?>">注册</a></li>
+                    <li><a href="<?php echo $this->createUrl('/account/login') ?>">登录</a></li>
+                    <li><a href="<?php echo $this->createUrl('/center/order') ?>">我的订单</a></li>
+                </ul>
             </div>
         </div>
-        <div class="container">
-            <?php echo $content ?>
-        </div>
-        <div id="push"></div>
+
+        <?php echo $content ?>
+
         <footer class="footer">
             <div class="container">
                 <p class="muted credit">Copyright mf23.cn</p>
@@ -80,7 +50,7 @@
         <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/bootstrap-ie.js"></script>
         <!--[endif]-->
         <script type="text/javascript">
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $('.carousel').carousel({
                     interval: 2000
                 });
