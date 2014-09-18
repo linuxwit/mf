@@ -107,7 +107,22 @@ p.article{
         height: 14px;
         line-height:14px;
     }
+}
 
 
+.porduct-info li{
+    line-height: 25px;
+}
+.product-description{
+    margin-top: 20px;
+}
 
+.box-same-product{
+    border: 1px solid #CCC;
+    padding: 5px;
+}
+
+.box-same-product h4{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CCC;
 }
