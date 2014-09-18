@@ -11,11 +11,67 @@
         </a>
     </div>
     <div class="span8">
-        <ul class="unstyled">
+        <ul class="unstyled porduct-info">
             <li><h4>雅诗兰黛(Estee Lauder)特润修护肌透精华露 50ml</h4></li>
-            <li><span></span></li>
-            
+            <li><hr/></li>
+            <li><h5>免费商场价：<font style="color:red">￥0元</font></h5></li>
+            <li><span>市场价：100元</span></li>
+            <li><span>品牌：nike</span></li>
+            <li><span>材料：xxx</span></li>
+            <li><h4>剩余时间：５６分４０秒</h4></li>
         </ul>
+        <div>
+            <a class="btn btn-danger">直接购买</a>  <a class="btn btn-default">加入到购物车</a>
+        </div>
 
+    </div>
+    <div class="span12 product-description">
+        <h4>商品介绍</h4>
+        <hr/>
+        <p>
+            工艺和手感，超乎想象
+            不锈钢金属边框，5英寸屏超窄边
+            全球顶配性能之王
+        </p>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="span12 box-same-product">
+        <h4>同类产品</h4>
+        <ul class="thumbnails">
+            <li class="span2">
+                <a class="thumbnail" href="#">
+                    <img alt="160x120"  style="width: 160px; height: 120px;" src="<?php echo Yii::app()->baseUrl ?>/upload/1.jpg">
+                </a>
+            </li>
+            <li class="span2">
+                <a class="thumbnail" href="#">
+                    <img alt="160x120"  style="width: 160px; height: 120px;" src="<?php echo Yii::app()->baseUrl ?>/upload/2.jpg">
+                </a>
+            </li>
+            <li class="span2">
+                <a class="thumbnail" href="#">
+                    <img alt="160x120"  style="width: 160px; height: 120px;" src="<?php echo Yii::app()->baseUrl ?>/upload/3.jpg">
+                </a>
+            </li>
+            <li class="span2">
+                <a class="thumbnail" href="#">
+                    <img alt="160x120"  style="width: 160px; height: 120px;" src="<?php echo Yii::app()->baseUrl ?>/upload/4.jpg">
+                </a>
+            </li>
+            <li class="span2">
+                <a class="thumbnail" href="#">
+                    <img alt="160x120"  style="width: 160px; height: 120px;" src="<?php echo Yii::app()->baseUrl ?>/upload/5.jpg">
+                </a>
+            </li>
+            <li class="span2">
+                <a class="thumbnail" href="#">
+                    <img alt="160x120" data-src="holder.js/160x120" style="width: 160px; height: 120px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAB4CAYAAAB1ovlvAAABt0lEQVR4nO3WQa6CMABAQe9/lF6He3AF3RsRkP/zFGYxC2lMG/pSepvn+Q6VW70Ark2ApARISoCkBEhKgKQESEqApARISoCkBEhKgKQESEqApARISoCkBEhKgKQESEqApARISoCkBEhKgKQESEqApARISoCkBEhKgKQESEqApARISoCkBEhKgKQESEqApARISoCkBEhKgKQESEqApARISoCkBEhKgKQESEqApARISoCkBEhKgKQESOoyAY4x7mOMxeevxt+Nfdt8v+oSAa5t+Ktg1n4fnW/v/Gd1iQCXNvTdJh8NQoDbCHDhs7cllmmaNp92a+sR4Mn99Yn0HOCW+T5dy5kJ8MAncW9ke54L8GS+4QT8zzvnr7pEgEv3vE/H1u6Aa//bOl6/NwFyegIkJUBSAiQlQFICJCVAUgIkJUBSAiQlQFICJCVAUgIkJUBSAiQlQFICJCVAUgIkJUBSAiQlQFICJCVAUgIkJUBSAiQlQFICJCVAUgIkJUBSAiQlQFICJCVAUgIkJUBSAiQlQFICJCVAUgIkJUBSAiQlQFICJCVAUgIkJUBSAiQlQFICJCVAUgIk9QDiKWVGintSUQAAAABJRU5ErkJggg==">
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
