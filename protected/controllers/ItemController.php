@@ -5,11 +5,12 @@
  */
 class ItemController extends Controller {
 
-    /*
+    /**
      * 物品信息展示
      */
     public function actionIndex($id) {
-        $this->render('index');
+        $item = array();
+        $this->render('index', array('item' => $item));
     }
 
 }

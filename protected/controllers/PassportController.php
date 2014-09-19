@@ -21,6 +21,10 @@ class PassportController extends Controller {
         $this->render('register');
     }
 
+    public function actionForgotpassword() {
+        $this->render('forgotpassword');
+    }
+
     /**
      * Displays the login page
      */

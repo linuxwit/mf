@@ -4,16 +4,16 @@
  * 订单处理
  */
 class OrderController extends Controller {
-
     /*
-     * Step 2:填写提交订单信息（
+     * Step 2:填写核对订单信息（
      */
+
     public function actionIndex() {
         $this->render('index');
     }
 
     /**
-     * Step 3: 确认提交订单信息
+     * Step 3: 成功提交订单
      */
     public function actionConfirm() {
         $this->render('confirm');
