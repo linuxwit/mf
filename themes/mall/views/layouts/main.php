@@ -30,9 +30,9 @@
         <div class="header" id="top-header">
             <div class="container navbar" >
                 <ul class="nav nav-pills pull-right">
-                    <li><a href="<?php echo $this->createUrl('/account/register') ?>">注册</a></li>
-                    <li><a href="<?php echo $this->createUrl('/account/login') ?>">登录</a></li>
-                    <li><a href="<?php echo $this->createUrl('/center/order') ?>">我的订单</a></li>
+                    <li><a href="<?php echo $this->createUrl('/passport/register') ?>">注册</a></li>
+                    <li><a href="<?php echo $this->createUrl('/passport/login') ?>">登录</a></li>
+                    <li><a href="<?php echo $this->createUrl('/i/myorder') ?>">我的订单</a></li>
                 </ul>
             </div>
         </div>
