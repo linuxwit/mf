@@ -1,6 +1,9 @@
 <?php
 
-class AccountController extends Controller {
+/**
+ * 用户认证
+ */
+class PassportController extends Controller {
 
     public $layout = '//layouts/account';
 
