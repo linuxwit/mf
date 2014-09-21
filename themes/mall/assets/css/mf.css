@@ -3,7 +3,7 @@ body {
     /*background: none repeat scroll 0 0 #fff;*/
     color: #5e5e5e;
     height: 100%;
-    background: none repeat scroll 0 0 #f2f2f2;
+    // background: none repeat scroll 0 0 #f2f2f2;
 }
 
 .header {
@@ -71,6 +71,7 @@ body {
     height: 20px;
     line-height: 20px;
     padding: 5px;
+    margin-right: 15px;
 }
 #header-nav .navbar-inner {
     background: none repeat scroll 0 0 #404144;
@@ -92,7 +93,9 @@ body {
     text-align: center;
 
 }
-
+#header-nav .nav > li:first-child > a{
+    //padding-left: 0px;
+}
 #header-nav .nav > li > a{
     padding-top: 10px;
     padding-left: 20px;
@@ -139,13 +142,13 @@ p.article{
 
 #box-register{
     border: 1px solid #E5E5E5;
-       background-color: #FFF;
+    background-color: #FFF;
 }
 
 #box-register h2{
     border-bottom: 1px solid #CCC;
     padding: 5px 10px;
- 
+
 }
 .form-register{
     padding: 5px 10px;
@@ -186,3 +189,133 @@ p.article{
     border-bottom: 1px solid #CCC;
 }
 
+.backgroud{
+    background-color: #FFF;
+}
+
+/**cart*/
+.cart-item{
+    width: 30%;
+}
+.cart-header{
+    background-color: #f7f7f7;
+}
+.cart-table{
+    border: 2px solid #ccc;
+    border-top: 3px solid #AAA;
+
+}
+
+.order-list-table{
+
+}
+
+.cart-table th,.order-list-table th{
+    text-align: center;
+}
+.cart-table td,.order-list-table td{
+    vertical-align: middle;
+    text-align: center;
+}
+.cart-table td:first-child,.order-list-table td:first-child{
+    text-align: left;
+}
+
+.cart-foot{
+    background-color: #f7f7f7;
+}
+.cart-foot td{
+    text-align: right;
+}
+.cart-progress{
+    height: 23px;
+    /*overflow: hidden;*/
+    padding-top: 23px;
+    width: 480px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cart-progress-1{
+    background: url("../img/step1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.cart-progress-2{
+    background: url("../img/step2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.cart-progress-3{
+    background: url("../img/step3.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.cart-progress li {
+    color: #bce8a3;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    width: 140px;
+}
+
+.cart-progress-1 .step-1,.cart-progress-2 .step-2,.cart-progress-3 .step-3{
+    color: #7abd54;
+}
+
+.order-box{
+    border: 1px solid #CCC;
+    border-top: 3px solid #AAA;
+}
+
+#step-1,#step-2,#step-3{
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+#step-3{
+    padding: 10px;
+}
+.step-content{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#step-4 .step-content{
+    margin:0;
+    height: 50px;
+    background-color: #EEE;
+    text-align: right;
+    padding: 10px 16px;
+}
+
+.order-table-price tr:first-child{
+    border-top: 1px solid #CCC;
+}
+
+.order-table-price td:first-child{
+    text-align: right;
+    border: none;
+
+}
+
+.order-success{
+    margin-bottom: 20px;
+}
+
+.order-success h4{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #7abd54;
+}
+
+.order-success div{
+
+    text-align: center;
+
+}
+.success h3{
+    margin-top: 20px;
+    color: #7abd54;
+}
+
+.order-success-operator{
+    margin: 20px auto;
+}
+.green{
+    color: #7abd54;
+}

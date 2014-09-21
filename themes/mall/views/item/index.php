@@ -1,9 +1,8 @@
 <ul class="breadcrumb">
     <li><a href="#">首页</a> <span class="divider">></span></li>
-    <li><a href="#">限时免费</a> <span class="divider">></span></li>
+    <li><a href="#">限时抢购</a> <span class="divider">></span></li>
     <li class="active">布娃娃</li>
 </ul>
-
 <div class="row">
     <div class="span4">
         <a class="thumbnail" href="<?php echo $this->createUrl('/item/index', array('id' => 1)) ?>">
@@ -21,7 +20,8 @@
             <li><h4>剩余时间：５６分４０秒</h4></li>
         </ul>
         <div>
-            <a class="btn btn-danger">直接购买</a>  <a class="btn btn-default">加入到购物车</a>
+            <a href="<?php echo $this->createUrl('/cart', array('item' => 1)) ?>" class="btn btn-danger btn-large">直接购买</a>　
+            <a class="btn btn-default btn-large">加入到购物车</a>
         </div>
 
     </div>
@@ -75,3 +75,4 @@
         </ul>
     </div>
 </div>
+

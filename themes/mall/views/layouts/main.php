@@ -9,6 +9,7 @@
         <!-- CSS -->
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/bootstrap.css" rel="stylesheet">
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/font-awesome.min.css">
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -50,7 +51,7 @@
         <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl ?>/assets/js/bootstrap-ie.js"></script>
         <!--[endif]-->
         <script type="text/javascript">
-            $(document).ready(function () {
+            $(document).ready(function() {
                 $('.carousel').carousel({
                     interval: 2000
                 });

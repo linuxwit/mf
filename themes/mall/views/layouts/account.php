@@ -5,8 +5,7 @@
             <div class="pull-left logo">
                 <a>
                     <h2>
-                        <?php //echo Yii::app()->name ?>
-                        WHB
+                        <?php echo Yii::app()->name ?>
                     </h2>
                 </a>
             </div>
