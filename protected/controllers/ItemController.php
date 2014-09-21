@@ -5,6 +5,8 @@
  */
 class ItemController extends Controller {
 
+    public $layout = '//layouts/home';
+
     /**
      * 物品信息展示
      */

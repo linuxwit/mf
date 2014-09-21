@@ -23,7 +23,7 @@ class IController extends AuthController {
     /**
      * 订单详情
      */
-    public function actionOrder() {
+    public function actionOrder($id) {
         $order = array();
         $this->render('order', array('order' => $order));
     }

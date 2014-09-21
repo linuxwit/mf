@@ -5,6 +5,8 @@
  */
 class CartController extends Controller {
 
+    public $layout = '//layouts/main';
+
     /**
      * Step 1: 我的购物车
      */

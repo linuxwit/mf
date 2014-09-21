@@ -13,3 +13,33 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/xiaoye/admin.php
 ---
+2014/09/21 13:19:52 [error] [exception.CException] exception 'CException' with message 'PassportController cannot find the requested view "register".' in /Users/littledang/Sites/mf/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Users/littledang/Sites/mf/yii/framework/web/CController.php(782): CController->renderPartial('register', NULL, true)
+#1 /Users/littledang/Sites/mf/protected/controllers/PassportController.php(21): CController->render('register')
+#2 /Users/littledang/Sites/mf/yii/framework/web/actions/CInlineAction.php(49): PassportController->actionRegister()
+#3 /Users/littledang/Sites/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/littledang/Sites/mf/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/littledang/Sites/mf/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(282): CController->run('register')
+#7 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passport/regist...')
+#8 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Users/littledang/Sites/mf/index.php(7): CApplication->run()
+#10 {main}
+REQUEST_URI=/~littledang/mf/index.php?r=passport/register
+HTTP_REFERER=http://localhost/~littledang/mf/index.php?r=trade
+---
+2014/09/21 13:19:58 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/Users/littledang/Sites/mf/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /Users/littledang/Sites/mf/protected/controllers/PassportController.php(32): spl_autoload_call()
+#1 /Users/littledang/Sites/mf/yii/framework/web/actions/CInlineAction.php(49): PassportController->actionLogin()
+#2 /Users/littledang/Sites/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/littledang/Sites/mf/yii/framework/web/CController.php(286): PassportController->runAction()
+#4 /Users/littledang/Sites/mf/yii/framework/web/CController.php(265): PassportController->runActionWithFilters()
+#5 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(282): PassportController->run()
+#6 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /Users/littledang/Sites/mf/index.php(7): CWebApplication->run()
+REQUEST_URI=/~littledang/mf/index.php?r=passport/login
+in /Users/littledang/Sites/mf/protected/controllers/PassportController.php (32)
+in /Users/littledang/Sites/mf/index.php (7)

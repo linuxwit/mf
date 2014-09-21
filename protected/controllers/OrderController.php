@@ -4,10 +4,12 @@
  * 订单处理
  */
 class OrderController extends Controller {
-    /*
+
+    public $layout = '//layouts/main';
+
+    /**
      * Step 2:填写核对订单信息（
      */
-
     public function actionIndex() {
         $this->render('index');
     }
