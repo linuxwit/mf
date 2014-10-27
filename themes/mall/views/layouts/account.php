@@ -5,12 +5,12 @@
             <div class="pull-left logo">
                 <a>
                     <h2>
-                        <?php echo Yii::app()->name ?>
+                        <a href="<?php echo $this->createUrl('/')?>"><?php echo Yii::app()->name ?></a>
                     </h2>
                 </a>
             </div>
             <div class="pull-right">
-                <a href="" class="pull-right btn-cart">我的购物车</a>
+                <a href="<?php echo $this->createUrl('/i/cart')?>" class="pull-right btn-cart">我的购物车</a>
             </div>
         </div>
     </div>

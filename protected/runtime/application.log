@@ -1,35 +1,4 @@
-2013/07/23 09:58:15 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "login".' in E:\workspace\xiaoye\yii\framework\web\CController.php:878
-Stack trace:
-#0 E:\workspace\xiaoye\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
-#1 E:\workspace\xiaoye\protected\controllers\AdminController.php(50): CController->render('login', Array)
-#2 E:\workspace\xiaoye\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionLogin()
-#3 E:\workspace\xiaoye\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
-#4 E:\workspace\xiaoye\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
-#5 E:\workspace\xiaoye\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 E:\workspace\xiaoye\yii\framework\web\CWebApplication.php(282): CController->run('')
-#7 E:\workspace\xiaoye\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
-#8 E:\workspace\xiaoye\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 E:\workspace\xiaoye\admin.php(7): CApplication->run()
-#10 {main}
-REQUEST_URI=/xiaoye/admin.php
----
-2014/09/21 13:19:52 [error] [exception.CException] exception 'CException' with message 'PassportController cannot find the requested view "register".' in /Users/littledang/Sites/mf/yii/framework/web/CController.php:878
-Stack trace:
-#0 /Users/littledang/Sites/mf/yii/framework/web/CController.php(782): CController->renderPartial('register', NULL, true)
-#1 /Users/littledang/Sites/mf/protected/controllers/PassportController.php(21): CController->render('register')
-#2 /Users/littledang/Sites/mf/yii/framework/web/actions/CInlineAction.php(49): PassportController->actionRegister()
-#3 /Users/littledang/Sites/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#4 /Users/littledang/Sites/mf/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#5 /Users/littledang/Sites/mf/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(282): CController->run('register')
-#7 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passport/regist...')
-#8 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
-#9 /Users/littledang/Sites/mf/index.php(7): CApplication->run()
-#10 {main}
-REQUEST_URI=/~littledang/mf/index.php?r=passport/register
-HTTP_REFERER=http://localhost/~littledang/mf/index.php?r=trade
----
-2014/09/21 13:19:58 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/Users/littledang/Sites/mf/yii/framework/YiiBase.php:421)
+2014/10/17 12:02:15 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/Users/littledang/Sites/mf/yii/framework/YiiBase.php:421)
 Stack trace:
 #0 /Users/littledang/Sites/mf/protected/controllers/PassportController.php(32): spl_autoload_call()
 #1 /Users/littledang/Sites/mf/yii/framework/web/actions/CInlineAction.php(49): PassportController->actionLogin()
@@ -43,3 +12,99 @@ Stack trace:
 REQUEST_URI=/~littledang/mf/index.php?r=passport/login
 in /Users/littledang/Sites/mf/protected/controllers/PassportController.php (32)
 in /Users/littledang/Sites/mf/index.php (7)
+2014/10/17 12:12:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "passport?callback=/~littledang/mf/index.php?r=i/myorder".' in /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passport?callba...')
+#1 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/littledang/Sites/mf/index.php(7): CApplication->run()
+#3 {main}
+REQUEST_URI=/~littledang/mf/index.php?r=passport?callback=%2F%7Elittledang%2Fmf%2Findex.php%3Fr%3Di%2Fmyorder
+HTTP_REFERER=http://localhost/~littledang/mf/index.php?r=passport/login
+---
+2014/10/17 12:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "passport?callback=/~littledang/mf/index.php?r=i/myorder".' in /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passport?callba...')
+#1 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/littledang/Sites/mf/index.php(7): CApplication->run()
+#3 {main}
+REQUEST_URI=/~littledang/mf/index.php?r=passport?callback=%2F%7Elittledang%2Fmf%2Findex.php%3Fr%3Di%2Fmyorder
+HTTP_REFERER=http://localhost/~littledang/mf/index.php?r=passport/login
+---
+2014/10/17 12:13:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "passport?callback=/~littledang/mf/index.php?r=i/myorder".' in /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passport?callba...')
+#1 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/littledang/Sites/mf/index.php(7): CApplication->run()
+#3 {main}
+REQUEST_URI=/~littledang/mf/index.php?r=passport?callback=%2F%7Elittledang%2Fmf%2Findex.php%3Fr%3Di%2Fmyorder
+HTTP_REFERER=http://localhost/~littledang/mf/index.php?r=passport/login
+---
+2014/10/17 12:14:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "passport?callback=/~littledang/mf/index.php?r=i/myorder".' in /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passport?callba...')
+#1 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/littledang/Sites/mf/index.php(7): CApplication->run()
+#3 {main}
+REQUEST_URI=/~littledang/mf/index.php?r=passport?callback=%2F%7Elittledang%2Fmf%2Findex.php%3Fr%3Di%2Fmyorder
+HTTP_REFERER=http://localhost/~littledang/mf/index.php?r=passport/login
+---
+2014/10/17 12:14:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "passport?callback=/~littledang/mf/index.php?r=i/myorder".' in /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passport?callba...')
+#1 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/littledang/Sites/mf/index.php(7): CApplication->run()
+#3 {main}
+REQUEST_URI=/~littledang/mf/index.php?r=passport?callback=%2F%7Elittledang%2Fmf%2Findex.php%3Fr%3Di%2Fmyorder
+HTTP_REFERER=http://localhost/~littledang/mf/index.php?r=passport/login
+---
+2014/10/17 12:14:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "passport?callback=/~littledang/mf/index.php?r=i/myorder".' in /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passport?callba...')
+#1 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/littledang/Sites/mf/index.php(7): CApplication->run()
+#3 {main}
+REQUEST_URI=/~littledang/mf/index.php?r=passport?callback=%2F%7Elittledang%2Fmf%2Findex.php%3Fr%3Di%2Fmyorder
+HTTP_REFERER=http://localhost/~littledang/mf/index.php?r=passport/login
+---
+2014/10/17 12:14:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/littledang/Sites/mf/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/littledang/Sites/mf/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passport')
+#3 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Users/littledang/Sites/mf/index.php(7): CApplication->run()
+#5 {main}
+REQUEST_URI=/~littledang/mf/index.php?r=passport&callback=%2F%7Elittledang%2Fmf%2Findex.php%3Fr%3Di%2Fmyorder
+HTTP_REFERER=http://localhost/~littledang/mf/index.php?r=passport/login
+---
+2014/10/17 12:15:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /Users/littledang/Sites/mf/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/littledang/Sites/mf/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passport')
+#3 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Users/littledang/Sites/mf/index.php(7): CApplication->run()
+#5 {main}
+REQUEST_URI=/~littledang/mf/index.php?r=passport&callback=%2F%7Elittledang%2Fmf%2Findex.php%3Fr%3Di%2Fmyorder
+HTTP_REFERER=http://localhost/~littledang/mf/index.php?r=passport/login
+---
+2014/10/17 12:26:47 [error] [exception.CException] exception 'CException' with message 'PassportController and its behaviors do not have a method or closure named "createUlr".' in /Users/littledang/Sites/mf/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /Users/littledang/Sites/mf/themes/mall/views/layouts/account.php(13): CComponent->__call('createUlr', Array)
+#1 /Users/littledang/Sites/mf/themes/mall/views/layouts/account.php(13): PassportController->createUlr('/i/cart')
+#2 /Users/littledang/Sites/mf/yii/framework/web/CBaseController.php(126): require('/Users/littleda...')
+#3 /Users/littledang/Sites/mf/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/littleda...', Array, true)
+#4 /Users/littledang/Sites/mf/yii/framework/web/CController.php(784): CBaseController->renderFile('/Users/littleda...', Array, true)
+#5 /Users/littledang/Sites/mf/protected/controllers/PassportController.php(48): CController->render('login', Array)
+#6 /Users/littledang/Sites/mf/yii/framework/web/actions/CInlineAction.php(49): PassportController->actionLogin()
+#7 /Users/littledang/Sites/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/littledang/Sites/mf/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Users/littledang/Sites/mf/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /Users/littledang/Sites/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('passport/login')
+#12 /Users/littledang/Sites/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /Users/littledang/Sites/mf/index.php(7): CApplication->run()
+#14 {main}
+REQUEST_URI=/~littledang/mf/index.php?r=passport/login&callback=%2F%7Elittledang%2Fmf%2Findex.php%3Fr%3Di%2Fmyorder
+HTTP_REFERER=http://localhost/~littledang/mf/index.php?r=passport/login&callback=%2F%7Elittledang%2Fmf%2Findex.php%3Fr%3Di%2Fmyorder
+---

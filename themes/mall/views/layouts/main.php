@@ -2,7 +2,7 @@
 <html lang="zh_cn">
     <head>
         <meta charset="utf-8">
-        <title><?php echo $this->pageTitle ?></title>
+        <title><?php echo $this->pageTitle.'-'.Yii::app()->name; ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="witwave">
@@ -22,16 +22,13 @@
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/mf.css" rel="stylesheet">
         <!-- Fav and touch icons -->
         <link rel="shortcut icon" href="<?php echo Yii::app()->theme->baseUrl ?>/assets/icon/favicon.png">
-        <script>
-
-        </script>
     </head>
     <body>
 
         <div class="header" id="top-header">
             <div class="container navbar" >
                 <ul class="nav nav-pills pull-right">
-                    <li><a href="<?php echo $this->createUrl('/passport/register') ?>">注册</a></li>
+                    <li><a href="<?php echo $this->createUrl('/passport/register') ?>">免费注册</a></li>
                     <li><a href="<?php echo $this->createUrl('/passport/login') ?>">登录</a></li>
                     <li><a href="<?php echo $this->createUrl('/i/myorder') ?>">我的订单</a></li>
                 </ul>
