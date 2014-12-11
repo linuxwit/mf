@@ -27,6 +27,9 @@ class Alipay {
     }
  
 
+    /**
+    *电脑支付
+    **/
     public function buildForm($request){
         $parameter = array(
             "service" => "create_direct_pay_by_user",
@@ -52,10 +55,11 @@ class Alipay {
     }
 
 
+    /**
+    *移动支付
+    **/
 	public function buildWapForm($request)
     {
-
-
 
         //构造要请求的参数数组，无需改动
         $req_id = date('Ymdhis');
