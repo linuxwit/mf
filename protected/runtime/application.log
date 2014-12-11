@@ -43,3 +43,266 @@ Stack trace:
 REQUEST_URI=/~littledang/mf/index.php?r=passport/login
 in /Users/littledang/Sites/mf/protected/controllers/PassportController.php (32)
 in /Users/littledang/Sites/mf/index.php (7)
+2014/12/11 06:40:03 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "order".' in /home/vagrant/workspace/mf/yii/framework/web/CController.php:878
+Stack trace:
+#0 /home/vagrant/workspace/mf/themes/one/views/site/index.php(32): CController->renderPartial('order')
+#1 /home/vagrant/workspace/mf/yii/framework/web/CBaseController.php(126): require('/home/vagrant/w...')
+#2 /home/vagrant/workspace/mf/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/vagrant/w...', NULL, true)
+#3 /home/vagrant/workspace/mf/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/vagrant/w...', NULL, true)
+#4 /home/vagrant/workspace/mf/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /home/vagrant/workspace/mf/protected/controllers/SiteController.php(11): CController->render('index')
+#6 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/vagrant/workspace/mf/index.php(7): CApplication->run()
+#14 {main}
+REQUEST_URI=/mf/index.php
+---
+2014/12/11 06:44:00 [error] [php] include(order.php): failed to open stream: No such file or directory (/home/vagrant/workspace/mf/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CWidgetFactory.php(147): spl_autoload_call()
+#1 /home/vagrant/workspace/mf/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#2 /home/vagrant/workspace/mf/yii/framework/web/CBaseController.php(172): SiteController->createWidget()
+#3 /home/vagrant/workspace/mf/themes/one/views/site/index.php(32): SiteController->widget()
+#4 /home/vagrant/workspace/mf/yii/framework/web/CBaseController.php(126): require()
+#5 /home/vagrant/workspace/mf/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /home/vagrant/workspace/mf/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /home/vagrant/workspace/mf/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /home/vagrant/workspace/mf/protected/controllers/SiteController.php(11): SiteController->render()
+#9 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): SiteController->runAction()
+#12 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/vagrant/workspace/mf/index.php(7): CWebApplication->run()
+REQUEST_URI=/mf/index.php
+in /home/vagrant/workspace/mf/themes/one/views/site/index.php (32)
+in /home/vagrant/workspace/mf/protected/controllers/SiteController.php (11)
+in /home/vagrant/workspace/mf/index.php (7)
+2014/12/11 06:50:36 [error] [php] include(order.php): failed to open stream: No such file or directory (/home/vagrant/workspace/mf/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CWidgetFactory.php(146): import()
+#1 /home/vagrant/workspace/mf/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#2 /home/vagrant/workspace/mf/yii/framework/web/CBaseController.php(172): SiteController->createWidget()
+#3 /home/vagrant/workspace/mf/themes/one/views/site/index.php(32): SiteController->widget()
+#4 /home/vagrant/workspace/mf/yii/framework/web/CBaseController.php(126): require()
+#5 /home/vagrant/workspace/mf/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /home/vagrant/workspace/mf/yii/framework/web/CController.php(869): SiteController->renderFile()
+#7 /home/vagrant/workspace/mf/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /home/vagrant/workspace/mf/protected/controllers/SiteController.php(11): SiteController->render()
+#9 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): SiteController->runAction()
+#12 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/vagrant/workspace/mf/index.php(7): CWebApplication->run()
+REQUEST_URI=/mf/index.php
+in /home/vagrant/workspace/mf/themes/one/views/site/index.php (32)
+in /home/vagrant/workspace/mf/protected/controllers/SiteController.php (11)
+in /home/vagrant/workspace/mf/index.php (7)
+2014/12/11 07:28:54 [error] [exception.CException] exception 'CException' with message 'PayController cannot find the requested view "index".' in /home/vagrant/workspace/mf/yii/framework/web/CController.php:878
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /home/vagrant/workspace/mf/protected/controllers/PayController.php(9): CController->render('index')
+#2 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): PayController->actionIndex()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pay/index')
+#8 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/vagrant/workspace/mf/index.php(7): CApplication->run()
+#10 {main}
+REQUEST_URI=/mf/index.php?r=pay/index
+---
+2014/12/11 07:29:02 [error] [exception.CException] exception 'CException' with message 'PayController cannot find the requested view "index".' in /home/vagrant/workspace/mf/yii/framework/web/CController.php:878
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /home/vagrant/workspace/mf/protected/controllers/PayController.php(9): CController->render('index')
+#2 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): PayController->actionIndex()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pay/index')
+#8 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/vagrant/workspace/mf/index.php(7): CApplication->run()
+#10 {main}
+REQUEST_URI=/mf/index.php?r=pay/index
+---
+2014/12/11 07:29:48 [error] [exception.CException] exception 'CException' with message 'PayController cannot find the requested view "index".' in /home/vagrant/workspace/mf/yii/framework/web/CController.php:878
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /home/vagrant/workspace/mf/protected/controllers/PayController.php(9): CController->render('index')
+#2 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): PayController->actionIndex()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pay/index')
+#8 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/vagrant/workspace/mf/index.php(7): CApplication->run()
+#10 {main}
+REQUEST_URI=/mf/index.php?r=pay/index
+---
+2014/12/11 07:31:37 [error] [exception.CException] exception 'CException' with message 'PayController cannot find the requested view "index".' in /home/vagrant/workspace/mf/yii/framework/web/CController.php:878
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /home/vagrant/workspace/mf/protected/controllers/PayController.php(9): CController->render('index')
+#2 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): PayController->actionIndex()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pay/index')
+#8 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/vagrant/workspace/mf/index.php(7): CApplication->run()
+#10 {main}
+REQUEST_URI=/mf/index.php?r=pay/index
+---
+2014/12/11 07:35:59 [error] [php] Creating default object from empty value (/home/vagrant/workspace/mf/protected/controllers/PayController.php:36)
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): PayController->runAction()
+#2 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): PayController->runActionWithFilters()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): PayController->run()
+#4 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/vagrant/workspace/mf/index.php(7): CWebApplication->run()
+REQUEST_URI=/mf/index.php?r=pay/alipay
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (36)
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (29)
+in /home/vagrant/workspace/mf/index.php (7)
+2014/12/11 07:36:44 [error] [php] Creating default object from empty value (/home/vagrant/workspace/mf/protected/controllers/PayController.php:38)
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): PayController->runAction()
+#2 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): PayController->runActionWithFilters()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): PayController->run()
+#4 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/vagrant/workspace/mf/index.php(7): CWebApplication->run()
+REQUEST_URI=/mf/index.php?r=pay/alipay
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (38)
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (31)
+in /home/vagrant/workspace/mf/index.php (7)
+2014/12/11 07:37:56 [error] [php] Undefined property: Alipay::$out_trade_no (/home/vagrant/workspace/mf/protected/controllers/PayController.php:39)
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): PayController->runAction()
+#2 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): PayController->runActionWithFilters()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): PayController->run()
+#4 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/vagrant/workspace/mf/index.php(7): CWebApplication->run()
+REQUEST_URI=/mf/index.php?r=pay/alipay
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (39)
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (31)
+in /home/vagrant/workspace/mf/index.php (7)
+2014/12/11 07:40:05 [error] [exception.CException] exception 'CException' with message 'Property "CHttpRequest.out_trade_no" is not defined.' in /home/vagrant/workspace/mf/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/vagrant/workspace/mf/protected/controllers/PayController.php(39): CComponent->__set('out_trade_no', '201412110740054...')
+#1 /home/vagrant/workspace/mf/protected/controllers/PayController.php(31): PayController->alipayRequest(0, '201412110740054...', NULL)
+#2 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): PayController->actionAlipay()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): CController->run('alipay')
+#7 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pay/alipay')
+#8 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/vagrant/workspace/mf/index.php(7): CApplication->run()
+#10 {main}
+REQUEST_URI=/mf/index.php?r=pay/alipay
+HTTP_REFERER=http://127.0.0.1/mf/index.php
+---
+2014/12/11 07:56:06 [error] [php] Undefined variable: form (/home/vagrant/workspace/mf/protected/controllers/PayController.php:38)
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): PayController->runAction()
+#2 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): PayController->runActionWithFilters()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): PayController->run()
+#4 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/vagrant/workspace/mf/index.php(7): CWebApplication->run()
+REQUEST_URI=/mf/index.php?r=pay/alipay
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (38)
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (28)
+in /home/vagrant/workspace/mf/index.php (7)
+2014/12/11 07:56:24 [error] [php] Undefined variable: form (/home/vagrant/workspace/mf/protected/controllers/PayController.php:41)
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): PayController->runAction()
+#2 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): PayController->runActionWithFilters()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): PayController->run()
+#4 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/vagrant/workspace/mf/index.php(7): CWebApplication->run()
+REQUEST_URI=/mf/index.php?r=pay/alipay
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (41)
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (28)
+in /home/vagrant/workspace/mf/index.php (7)
+2014/12/11 08:18:18 [error] [exception.CException] exception 'CException' with message 'PayController cannot find the requested view "index".' in /home/vagrant/workspace/mf/yii/framework/web/CController.php:878
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /home/vagrant/workspace/mf/protected/controllers/PayController.php(9): CController->render('index')
+#2 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): PayController->actionIndex()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pay/index')
+#8 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/vagrant/workspace/mf/index.php(7): CApplication->run()
+#10 {main}
+REQUEST_URI=/mf/index.php?r=pay/index
+---
+2014/12/11 08:18:23 [error] [php] Undefined variable: alipay_config (/home/vagrant/workspace/mf/protected/extensions/alipay/Alipay.php:33)
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): PayController->actionAlipay()
+#1 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): PayController->runAction()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): PayController->runActionWithFilters()
+#4 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): PayController->run()
+#5 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/vagrant/workspace/mf/index.php(7): CWebApplication->run()
+REQUEST_URI=/mf/index.php?r=pay/alipay
+in /home/vagrant/workspace/mf/protected/extensions/alipay/Alipay.php (33)
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (43)
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (28)
+2014/12/11 08:18:48 [error] [php] Undefined variable: alipay_config (/home/vagrant/workspace/mf/protected/extensions/alipay/Alipay.php:33)
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): PayController->actionAlipay()
+#1 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): PayController->runAction()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): PayController->runActionWithFilters()
+#4 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): PayController->run()
+#5 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/vagrant/workspace/mf/index.php(7): CWebApplication->run()
+REQUEST_URI=/mf/index.php?r=pay/alipay
+in /home/vagrant/workspace/mf/protected/extensions/alipay/Alipay.php (33)
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (43)
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (28)
+2014/12/11 08:19:18 [error] [php] Undefined variable: alipay_config (/home/vagrant/workspace/mf/protected/extensions/alipay/Alipay.php:33)
+Stack trace:
+#0 /home/vagrant/workspace/mf/yii/framework/web/actions/CInlineAction.php(49): PayController->actionAlipay()
+#1 /home/vagrant/workspace/mf/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/vagrant/workspace/mf/yii/framework/web/CController.php(286): PayController->runAction()
+#3 /home/vagrant/workspace/mf/yii/framework/web/CController.php(265): PayController->runActionWithFilters()
+#4 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(282): PayController->run()
+#5 /home/vagrant/workspace/mf/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/vagrant/workspace/mf/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/vagrant/workspace/mf/index.php(7): CWebApplication->run()
+REQUEST_URI=/mf/index.php?r=pay/alipay
+in /home/vagrant/workspace/mf/protected/extensions/alipay/Alipay.php (33)
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (43)
+in /home/vagrant/workspace/mf/protected/controllers/PayController.php (28)
