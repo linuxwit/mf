@@ -11,7 +11,8 @@ class PayController extends Controller {
 
 	public function actionAlipay(){
 	 
-
+		die('hello');
+		
 	 	if (Yii::app()->request->isPostRequest){
  			$userEmail=Yii::app()->request->getParam('email');
  			$userName=Yii::app()->request->getParam('name');
